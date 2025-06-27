@@ -12,7 +12,29 @@ import { useArtistContext } from '@/context/ArtistContext'
 export default function ArtistsPage() {
   const { artists: contextArtists } = useArtistContext()
   const searchParams = useSearchParams()
-  const selectedCategory = searchParams.get('category')
+
+  type FilterState = {
+    category: string[]
+    location: string[]
+    fees: string[]
+  }
+
+  const [filters, setFilters] = useState<FilterState>({
+    category: [],
+    location: [],
+    fees: [],
+  })
+
+  // Handle initial query param on the client
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get('category')
+    if (categoryFromUrl) {
+      setFilters((prev) => ({
+        ...prev,
+        category: [categoryFromUrl],
+      }))
+    }
+  }, [searchParams])
 
   const mergedArtists: Artist[] = useMemo(() => {
     return [
@@ -23,19 +45,6 @@ export default function ArtistsPage() {
       })),
     ]
   }, [contextArtists])
-
-  type FilterState = {
-  category: string[]
-  location: string[]
-  fees: string[]
-}
-
-const [filters, setFilters] = useState<FilterState>({
-  category: selectedCategory ? [selectedCategory] : [],
-  location: [],
-  fees: [],
-})
-
 
   const [filteredArtists, setFilteredArtists] = useState<Artist[]>(mergedArtists)
 
