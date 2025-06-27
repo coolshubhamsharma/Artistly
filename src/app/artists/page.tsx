@@ -11,7 +11,6 @@ import { useArtistContext } from '@/context/ArtistContext'
 
 export default function ArtistsPage() {
   const { artists: contextArtists } = useArtistContext()
-  const searchParams = useSearchParams()
 
   type FilterState = {
     category: string[]
@@ -27,14 +26,15 @@ export default function ArtistsPage() {
 
   // Handle initial query param on the client
   useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search)
     const categoryFromUrl = searchParams.get('category')
     if (categoryFromUrl) {
       setFilters((prev) => ({
         ...prev,
-        category: [categoryFromUrl],
+        category: categoryFromUrl ? [categoryFromUrl] : [],
       }))
     }
-  }, [searchParams])
+  }, [])
 
   const mergedArtists: Artist[] = useMemo(() => {
     return [
