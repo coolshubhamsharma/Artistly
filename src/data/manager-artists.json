@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Rhea Kapoor",
+    "bio": "A versatile contemporary dancer with 8+ years of stage experience, specializing in Bollywood and fusion choreography.",
+    "location": "Mumbai",
+    "category": ["Dancer"],
+    "fees": "₹25k–₹50k",
+    "languages": ["Hindi", "English"],
+    "image": "https://images.unsplash.com/photo-1750863491919-b18bc2c98e9f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": "2",
+    "name": "Arjun Singh",
+    "bio": "Renowned DJ and music producer known for high-energy club sets and live EDM festival performances.",
+    "location": "Delhi",
+    "category": ["DJ"],
+    "fees": "₹50k–₹75k",
+    "languages": ["English", "Punjabi"],
+    "image": "https://images.unsplash.com/photo-1750611441962-9cc5e1cc4542?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": "3",
+    "name": "Meena Joseph",
+    "bio": "Bilingual motivational speaker and corporate trainer, has hosted 100+ keynote sessions across India.",
+    "location": "Bangalore",
+    "category": ["Speaker"],
+    "fees": "₹40k–₹60k",
+    "languages": ["English", "Kannada"],
+    "image": "https://images.unsplash.com/photo-1750045662227-0ee2789268d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": "4",
+    "name": "Karan Malhotra",
+    "bio": "Bollywood playback singer and voice coach, famous for romantic ballads and energetic live gigs.",
+    "location": "Chandigarh",
+    "category": ["Singer"],
+    "fees": "₹35k–₹55k",
+    "languages": ["Hindi", "Punjabi"],
+    "image": "https://images.unsplash.com/photo-1750263102524-8f24f397b59b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D"
+  }
+]
