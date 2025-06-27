@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useMemo } from 'react'
-import { useSearchParams } from 'next/navigation'
+// import { useSearchParams } from 'next/navigation'
 
 import FilterBlock from '@/components/FilterBlock'
 import ArtistCard from '@/components/ArtistCard'
